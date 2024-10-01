@@ -20,6 +20,7 @@ services:
     ports:
       - "8080:80"
     volumes:
+      - /etc/nginx/conf.d:/etc/nginx/conf.d
       - ./src:/var/www/html
     depends_on:
       - web
